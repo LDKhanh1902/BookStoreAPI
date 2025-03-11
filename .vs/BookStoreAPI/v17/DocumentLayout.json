@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|c:\\users\\khanh\\source\\repos\\bookstoreapi\\bookstoreapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|c:\\users\\khanh\\source\\repos\\bookstoreapi\\bookstoreapi\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|c:\\users\\khanh\\source\\repos\\bookstoreapi\\bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|c:\\users\\khanh\\source\\repos\\bookstoreapi\\bookstoreapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D343A231-DFED-4AFA-9170-7B63FE7BD53B}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "BookStoreAPI\\Dockerfile",
+              "ToolTip": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\Dockerfile",
+              "RelativeToolTip": "BookStoreAPI\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-11T12:32:53.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PublishersController.cs",
+              "DocumentMoniker": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\Controllers\\PublishersController.cs",
+              "RelativeDocumentMoniker": "BookStoreAPI\\Controllers\\PublishersController.cs",
+              "ToolTip": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\Controllers\\PublishersController.cs",
+              "RelativeToolTip": "BookStoreAPI\\Controllers\\PublishersController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:56:34.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BookStoreAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\appsettings.json",
+              "RelativeToolTip": "BookStoreAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T10:50:35.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BookStoreAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\KHANH\\source\\repos\\BookStoreAPI\\BookStoreAPI\\Program.cs",
+              "RelativeToolTip": "BookStoreAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:50:08.212Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
