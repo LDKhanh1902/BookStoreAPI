@@ -18,6 +18,14 @@ builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<BookService>();
 builder.Services.AddScoped<PublisherService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+    policy => policy.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+});
+
 var connectionString = builder.Configuration.GetConnectionString("dbBookStore");
 builder.Services.AddDbContext<DbModelContext>(options =>
         options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)))
