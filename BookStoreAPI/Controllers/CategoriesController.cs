@@ -46,7 +46,7 @@ namespace ReactStudentApp.Server.Controllers
 
                 var success = await _categoryService.InsertCategory(category);
                 if (success)
-                    return Ok(new { message = "Insert complete" });
+                    return Ok(new { message = "Insert complete", data = category });
 
                 return BadRequest(new { message = "Insert failed" });
             }

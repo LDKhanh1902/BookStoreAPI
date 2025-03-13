@@ -44,7 +44,7 @@ namespace ReactStudentApp.Server.Controllers
 
                 var result = await _publisherService.InsertPublisher(publisher);
                 if (result)
-                    return CreatedAtAction(nameof(Get), new { id = publisher.PublisherId }, publisher);
+                    return Ok(new {message = "Insert complete", data = publisher});
                 return BadRequest("Failed to insert publisher.");
             }
             catch (Exception ex)
@@ -65,7 +65,7 @@ namespace ReactStudentApp.Server.Controllers
 
                 var result = await _publisherService.UpdatePublisher(id, publisher);
                 if (result)
-                    return NoContent(); // Successfully updated
+                    return Ok(new {message = "Insert complete", data = publisher}); // Successfully updated
                 return NotFound();
             }
             catch (Exception ex)
@@ -83,7 +83,7 @@ namespace ReactStudentApp.Server.Controllers
             {
                 var result = await _publisherService.DeletePublisher(id);
                 if (result)
-                    return NoContent(); // Successfully deleted
+                    return Ok(new {message = "Delete was not successful"});; // Successfully deleted
                 return NotFound();
             }
             catch (Exception ex)
