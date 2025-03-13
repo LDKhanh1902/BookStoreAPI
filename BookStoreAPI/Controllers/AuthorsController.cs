@@ -48,7 +48,7 @@ namespace ReactStudentApp.Server.Controllers
             {
                 var success = await _authorService.InsertAuthor(author);
                 if (success)
-                    return Ok(new { message = "Insert complete", author });
+                    return Ok(new { message = "Insert complete", data = author });
 
                 return BadRequest(new { message = "Insert was not successful" });
             }
@@ -73,7 +73,7 @@ namespace ReactStudentApp.Server.Controllers
             {
                 var success = await _authorService.UpdateAuthor(id, author);
                 if (success)
-                    return Ok(new { message = "Update complete", author });
+                    return Ok(new { message = "Update complete", data = author });
 
                 return BadRequest(new { message = "Update was not successful", author });
             }
