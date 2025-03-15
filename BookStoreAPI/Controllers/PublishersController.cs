@@ -40,12 +40,12 @@ namespace ReactStudentApp.Server.Controllers
             try
             {
                 if (publisher == null)
-                    return BadRequest("Invalid publisher data.");
+                    return BadRequest(new {message "Invalid publisher data." });
 
                 var result = await _publisherService.InsertPublisher(publisher);
                 if (result)
                     return Ok(new {message = "Insert complete", data = publisher});
-                return BadRequest("Failed to insert publisher.");
+                return BadRequest(new { message "Failed to insert publisher." });
             }
             catch (Exception ex)
             {
@@ -66,7 +66,7 @@ namespace ReactStudentApp.Server.Controllers
                 var result = await _publisherService.UpdatePublisher(id, publisher);
                 if (result)
                     return Ok(new {message = "Insert complete", data = publisher}); // Successfully updated
-                return NotFound();
+                return BadRequest(new { message "Failed to update publisher." });
             }
             catch (Exception ex)
             {
@@ -84,7 +84,7 @@ namespace ReactStudentApp.Server.Controllers
                 var result = await _publisherService.DeletePublisher(id);
                 if (result)
                     return Ok(new {message = "Delete was not successful"});; // Successfully deleted
-                return NotFound();
+                return BadRequest(new { message "Failed to delete publisher." });
             }
             catch (Exception ex)
             {
