@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ReactStudentApp.Server.Services;
 using ReactAppTest.Server.Models;
 
@@ -24,11 +24,11 @@ namespace ReactStudentApp.Server.Controllers
             try
             {
                 var publishers = await _publisherService.GetPublisher();
-                return Ok(new {message = "Fecth Complate",data= publishers});
+                return Ok(new { message = "Fetch Complete", data = publishers });
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error fetching books");
+                _logger.LogError(ex, "Error fetching publishers");
                 return StatusCode(500, new { message = "Internal Server Error" });
             }
         }
@@ -40,16 +40,17 @@ namespace ReactStudentApp.Server.Controllers
             try
             {
                 if (publisher == null)
-                    return BadRequest(new {message "Invalid publisher data." });
+                    return BadRequest(new { message = "Invalid publisher data." });
 
                 var result = await _publisherService.InsertPublisher(publisher);
                 if (result)
-                    return Ok(new {message = "Insert complete", data = publisher});
-                return BadRequest(new { message "Failed to insert publisher." });
+                    return Ok(new { message = "Insert complete", data = publisher });
+                
+                return BadRequest(new { message = "Failed to insert publisher." });
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error fetching books");
+                _logger.LogError(ex, "Error inserting publisher");
                 return StatusCode(500, new { message = "Internal Server Error" });
             }
         }
@@ -61,16 +62,17 @@ namespace ReactStudentApp.Server.Controllers
             try
             {
                 if (publisher == null || id != publisher.PublisherId)
-                    return BadRequest("Publisher data is invalid.");
+                    return BadRequest(new { message = "Publisher data is invalid." });
 
                 var result = await _publisherService.UpdatePublisher(id, publisher);
                 if (result)
-                    return Ok(new {message = "Insert complete", data = publisher}); // Successfully updated
-                return BadRequest(new { message "Failed to update publisher." });
+                    return Ok(new { message = "Update complete", data = publisher });
+
+                return BadRequest(new { message = "Failed to update publisher." });
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error fetching books");
+                _logger.LogError(ex, "Error updating publisher");
                 return StatusCode(500, new { message = "Internal Server Error" });
             }
         }
@@ -83,12 +85,13 @@ namespace ReactStudentApp.Server.Controllers
             {
                 var result = await _publisherService.DeletePublisher(id);
                 if (result)
-                    return Ok(new {message = "Delete was not successful"});; // Successfully deleted
-                return BadRequest(new { message "Failed to delete publisher." });
+                    return Ok(new { message = "Delete successful" });
+
+                return BadRequest(new { message = "Failed to delete publisher." });
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error fetching books");
+                _logger.LogError(ex, "Error deleting publisher");
                 return StatusCode(500, new { message = "Internal Server Error" });
             }
         }
